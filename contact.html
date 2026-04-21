@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Didan Ridwansyah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">DR<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="section-label">Kontak</p>
+          <h1 class="page-title">Ayo<br /><em>berkolaborasi!</em></h1>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container contact-layout">
+          <!-- FORM -->
+          <div class="contact-form-wrap">
+            <h2 style="font-family: &quot;Lora&quot;, serif; font-size: 1.75rem; margin-bottom: 0.5rem">Kirim Pesan</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem">Isi form di bawah dan saya akan membalas secepatnya.</p>
+
+            <form class="c-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Nama Depan</label>
+                  <input type="text" id="fname" placeholder="Nama Depan" required />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Nama Belakang</label>
+                  <input type="text" id="lname" placeholder="Nama Belakang" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gemail.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <select id="subject">
+                  <option value="">Pilih topik...</option>
+                  <option>Tawaran Kerja / Magang</option>
+                  <option>Kolaborasi Proyek</option>
+                  <option>Konsultasi Teknis</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" rows="5" placeholder="Halo Didan, saya ingin..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Kirim Pesan →</button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="fs-icon">✓</div>
+              <h3>Pesan terkirim!</h3>
+              <p>Terima kasih sudah menghubungi. Saya akan membalas secepatnya.</p>
+            </div>
+          </div>
+
+          <!-- INFO -->
+          <div class="contact-info">
+            <h2 style="font-family: &quot;Lora&quot;, serif; font-size: 1.75rem; margin-bottom: 2rem">Info Kontak</h2>
+
+            <div class="ci-cards">
+              <a href="mailto:didanridwansyah@gmail.com" class="ci-card">
+                <div class="ci-icon">✉️</div>
+                <div>
+                  <p class="ci-label">Email</p>
+                  <p class="ci-val">didanridwansyah@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:081514441444" class="ci-card">
+                <div class="ci-icon">📱</div>
+                <div>
+                  <p class="ci-label">Telepon / WhatsApp</p>
+                  <p class="ci-val">081514441444</p>
+                </div>
+              </a>
+              <div class="ci-card no-link">
+                <div class="ci-icon">📍</div>
+                <div>
+                  <p class="ci-label">Lokasi</p>
+                  <p class="ci-val">Bandung, Jawa Barat</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ci-social">
+              <p class="ci-label" style="margin-bottom: 1rem">Media Sosial</p>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/didan-ridwansyah" target="_blank" class="social-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  LinkedIn
+                </a>
+                <a href="https://github.com/DidanR1" target="_blank" class="social-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                    />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="availability-box">
+              <div class="av-dot"></div>
+              <div>
+                <p style="font-weight: 600; font-size: 0.95rem">Tersedia untuk peluang baru</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem">Terbuka untuk posisi full-time, part-time, maupun freelance di bidang Web Development atau Network Support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="nav-logo">DR<span>.</span></span>
+        <p>© 2025 Didan Ridwansyah · Bandung, Jawa Barat</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/didan-ridwansyah" target="_blank">LinkedIn</a>
+          <a href="https://github.com/DidanR1" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

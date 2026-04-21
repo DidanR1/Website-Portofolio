@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project — Didan Ridwansyah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">DR<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html" class="active">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="section-label">Portofolio</p>
+          <h1 class="page-title">Proyek yang<br /><em>pernah saya buat</em></h1>
+        </div>
+      </section>
+
+      <!-- FILTER -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="web">Web App</button>
+            <button class="filter-btn" data-filter="network">Networking</button>
+            <button class="filter-btn" data-filter="qa">QA Testing</button>
+          </div>
+
+          <div class="projects-full" id="projectsGrid">
+            <!-- Project 1 -->
+            <div class="pf-card" data-cat="web">
+              <div class="pf-header" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9)">
+                <div class="pf-mockup">
+                  <div class="mock-bar"><span></span><span></span><span></span></div>
+                  <div class="mock-body">
+                    <div class="mock-line w80"></div>
+                    <div class="mock-line w60"></div>
+                    <div class="mock-block"></div>
+                    <div class="mock-line w70"></div>
+                    <div class="mock-line w50"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-body">
+                <div class="pf-meta">
+                  <span class="pf-cat web">Web App</span>
+                  <span class="pf-year">2024</span>
+                </div>
+                <h2>Sistem Pemesanan Paket Umrah</h2>
+                <p>
+                  Aplikasi web full-stack untuk pemesanan paket umrah yang dibangun selama magang di PT. Alyusro Bandung. Sistem mencakup fitur pemilihan dan perbandingan paket, manajemen hotel, serta kalkulasi harga dan fasilitas secara
+                  real-time.
+                </p>
+                <div class="pf-highlights">
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Pemilihan &amp; perbandingan paket umrah</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Database relasional terstruktur</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Prototype sistem pemesanan fungsional</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Autentikasi & otorisasi pengguna</span>
+                  </div>
+                </div>
+                <div class="pf-stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade Template</span><span>MVC</span></div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="pf-card" data-cat="network">
+              <div class="pf-header" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb)">
+                <div class="pf-mockup">
+                  <div class="mock-bar"><span></span><span></span><span></span></div>
+                  <div class="mock-body net">
+                    <div class="net-node main">Server</div>
+                    <div class="net-line h"></div>
+                    <div class="net-nodes-row">
+                      <div class="net-node small">PC 1</div>
+                      <div class="net-node small">PC 2</div>
+                      <div class="net-node small">PC 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-body">
+                <div class="pf-meta">
+                  <span class="pf-cat network">Networking</span>
+                  <span class="pf-year">Sekarang</span>
+                </div>
+                <h2>Konfigurasi Jaringan Komputer</h2>
+                <p>Proyek Usaha implementasi dan konfigurasi jaringan komputer skala Rumahan. Mencakup perancangan topologi jaringan, konfigurasi IP Addressing, serta manajemen dan troubleshooting router Mikrotik menggunakan WinBox.</p>
+                <div class="pf-highlights">
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Desain topologi jaringan Client–Server</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Konfigurasi IP Addressing &amp; subnetting</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Manajemen router Mikrotik via WinBox</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Troubleshooting jaringan end-to-end</span>
+                  </div>
+                </div>
+                <div class="pf-stack"><span>WinBox</span><span>Mikrotik</span><span>TCP/IP</span><span>Subnetting</span></div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="pf-card" data-cat="qa">
+              <div class="pf-header" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0)">
+                <div class="pf-mockup">
+                  <div class="mock-bar"><span></span><span></span><span></span></div>
+                  <div class="mock-body">
+                    <div class="test-row pass"><span class="test-dot"></span><span class="test-txt">Login test — PASS</span></div>
+                    <div class="test-row pass"><span class="test-dot"></span><span class="test-txt">Form validation — PASS</span></div>
+                    <div class="test-row fail"><span class="test-dot"></span><span class="test-txt">Edge case — FAIL</span></div>
+                    <div class="test-row pass"><span class="test-dot"></span><span class="test-txt">API response — PASS</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-body">
+                <div class="pf-meta">
+                  <span class="pf-cat qa">QA Testing</span>
+                  <span class="pf-year">2025</span>
+                </div>
+                <h2>Automated Testing Suite</h2>
+                <p>
+                  Pengembangan skenario pengujian komprehensif untuk aplikasi web menggunakan pendekatan Black Box Testing (manual) dan otomasi dengan Selenium WebDriver — mencakup pengujian fungsional, validasi form, dan alur autentikasi.
+                </p>
+                <div class="pf-highlights">
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Skenario uji Black Box yang terstruktur</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Automation script dengan Selenium WebDriver</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Pengujian form, login, dan navigasi</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Dokumentasi test case dan hasil uji</span>
+                  </div>
+                </div>
+                <div class="pf-stack"><span>Selenium</span><span>Black Box Testing</span><span>Test Automation</span></div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="pf-card" data-cat="web">
+              <div class="pf-header" style="background: linear-gradient(135deg, #ede7f6, #d1c4e9)">
+                <div class="pf-mockup">
+                  <div class="mock-bar"><span></span><span></span><span></span></div>
+                  <div class="mock-body">
+                    <div class="mock-line w90"></div>
+                    <div class="mock-grid">
+                      <div class="mock-cell"></div>
+                      <div class="mock-cell"></div>
+                      <div class="mock-cell"></div>
+                    </div>
+                    <div class="mock-line w60"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-body">
+                <div class="pf-meta">
+                  <span class="pf-cat web">Web App</span>
+                  <span class="pf-year">2021</span>
+                </div>
+                <h2>Sistem Manajemen Data Stok</h2>
+                <p>Aplikasi web sederhana untuk pencatatan dan manajemen data stok barang, terinspirasi dari pengalaman kerja di PT. Amoeba Bio Sintesa. Dibangun menggunakan Laravel dengan CRUD lengkap dan laporan stok.</p>
+                <div class="pf-highlights">
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>CRUD manajemen data barang</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Laporan barang masuk &amp; keluar</span>
+                  </div>
+                  <div class="ph-item">
+                    <span class="ph-icon">✦</span>
+                    <span>Dashboard ringkasan stok real-time</span>
+                  </div>
+                </div>
+                <div class="pf-stack"><span>Laravel</span><span>MySQL</span><span>PHP</span><span>Blade</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="nav-logo">DR<span>.</span></span>
+        <p>© 2025 Didan Ridwansyah · Bandung, Jawa Barat</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/didan-ridwansyah" target="_blank">LinkedIn</a>
+          <a href="https://github.com/DidanR1" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
